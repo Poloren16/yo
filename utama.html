@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Registrasi - HTML & CSS Only</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<div class="navbar">
+  <label for="menu-toggle">&#9776;</label>
+  <span>List Registrasi</span>
+</div>
+
+<div class="container">
+  <aside class="sidebar">
+    <div class="user-card">
+      <div class="avatar">AU</div>
+      <div class="user-nim">25870010</div>
+      <div class="user-name">MONTERICO ADRIAN</div>
+    </div>
+
+    <h6 class="menu-section">Menu</h6>
+    <div class="menu-item"><a href="#">Beranda</a></div>
+
+    <h6 class="menu-section">Menu Dosen Wali</h6>
+    <div class="menu-item active"><a href="#">List Registrasi</a></div>
+
+    <h6 class="menu-section">Menu Admin</h6>
+    <div class="menu-item"><a href="#">List Mahasiswa</a></div>
+    <div class="menu-item"><a href="#">Jadwal Registrasi</a></div>
+  </aside>
+
+  <main class="main">
+    <section class="schedule-card">
+      <h6>Jadwal Registrasi Prodi S1 Teknologi Informasi</h6>
+      <div class="schedule-grid">
+        <div>
+          <strong>Angkatan</strong><br>
+          2324<br>2425<br>2526
+        </div>
+        <div>
+          <strong>Mulai Regis</strong><br>
+          2025-09-02<br>2025-09-03<br>2025-09-06
+        </div>
+        <div>
+          <strong>Akhir Regis</strong><br>
+          2025-09-04<br>2025-09-06<br>2025-09-06
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="alert-filter">
+        Silakan klik <b>Generate Filter</b> jika ingin mengubah data yang ditampilkan.
+      </div>
+
+      <div class="filter-bar">
+        <div class="row">
+          <div class="col">
+            <label>Filter</label>
+            <input type="text" placeholder="Cari...">
+          </div>
+          <div class="col">
+            <label>Pilih Kelas</label>
+            <select><option>Semua</option><option>IT-45-02</option></select>
+          </div>
+          <div class="col">
+            <label>Status Registrasi</label>
+            <select><option>Semua</option><option>KRS Disetujui</option></select>
+          </div>
+          <div class="col">
+            <button>Generate Filter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Nama/NIM</th>
+              <th>Kelas</th>
+              <th>Status Registrasi</th>
+              <th>Status Mahasiswa</th>
+              <th>Aksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><b>ALFI HADI MAULANA</b><br><small>13032100127</small></td>
+              <td>IT-45-02</td>
+              <td><span class="badge primary">KRS DISETUJUI</span></td>
+              <td>MAHASISWA</td>
+              <td>
+                <button class="btn primary">Pratinjau</button>
+                <button class="btn success">Registrasi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><b>MUHAMMAD ROGHIB</b><br><small>1303210137</small></td>
+              <td>IT-45-02</td>
+              <td><span class="badge warning">MENUNGGU</span></td>
+              <td>MAHASISWA</td>
+              <td>
+                <button class="btn primary">Pratinjau</button>
+                <button class="btn success">Registrasi</button>
+              </td>
+            </tr>
+            <tr>
+              <td><b>FAISAL MAULANA</b><br><small>1303210146</small></td>
+              <td>IT-45-02</td>
+              <td><span class="badge danger">BELUM REGISTRASI</span></td>
+              <td>MAHASISWA</td>
+              <td>
+                <button class="btn primary">Pratinjau</button>
+                <button class="btn success">Registrasi</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pagination">
+        <small>Menampilkan 1 - 3 dari 50 data</small>
+        <div class="pages">
+          <a href="#">Awal</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">Akhir</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+</body>
+</html>
